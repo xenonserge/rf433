@@ -9,6 +9,6 @@ Use rtl_433 software to record the signal from THGR810
 ```
 rtl_433 -d driver=hackrf -w capture_thgr810.ook
 ```
-
+![Image](https://github.com/user-attachments/assets/b5496536-d790-41c0-afed-f0e047c8363c)
 
 ## Decode Oregon Protocols V3 and spoof temperature on rf433
