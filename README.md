@@ -1,10 +1,14 @@
 # Hacking an rf433 temperature probe
 
-Table des matières :
-
-
 ## The temperature and humidity probe Oregon THGR810
 ![Image](https://github.com/user-attachments/assets/4a85eabd-7aa1-44f7-b024-3813c0648c27)
+
+## Capture signal
+
+Use rtl_433 software to record the signal from THGR810
+```
+rtl_433 -d driver=hackrf -w capture_thgr810.ook
+```
 
 
 ## Decode Oregon Protocols V3 and spoof temperature on rf433
