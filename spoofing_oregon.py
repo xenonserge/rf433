@@ -30,16 +30,6 @@ def hex_to_bitstream(hex_string):
         bitstream.extend(int(bit) for bit in reversed_bits)
     return bitstream
 
-def bitstream_to_symbols(bitstream):
-    symbols = []
-    prev = bitstream[0]
-    symbols.append('S')  # First bit assumed to be '1'
-    for bit in bitstream[1:]:
-        symbols.append('S' if bit == prev else 'L')
-        prev = bit
-    return ''.join(['SS' if s == 'S' else 'L' for s in symbols])  # S = short = SS
-
-
 
 def binary_to_raw(binary_message, output_filename="raw_data.txt"):
     """
@@ -50,7 +40,7 @@ def binary_to_raw(binary_message, output_filename="raw_data.txt"):
 
     previous_state = "1"  # État initial a 1
     raw_values = []
-    raw_values.append(550)  # valeur de la premiere impulsion pour la mise en forme du raw - valur a 550 mais qui pourrait etre plus longue
+    raw_values.append(550)  # valeur de la premiere impulsion pour la mise en forme du raw - valeur a 550 mais qui pourrait etre plus longue
 
     for i in range(0, len(binary_message), 1):
         if i + 1 < len(binary_message):
@@ -76,7 +66,8 @@ def binary_to_raw(binary_message, output_filename="raw_data.txt"):
             previous_state = bit
         header = f"""Filetype: Flipper SubGhz RAW File
 Version: 1
-# generated with https://github.com/Dicalius/RF-433
+# generated with https://github.com/xenonserge/rf433
+# Thanks to Dicalius
 # Auto-generated on transmission
 Frequency: 433920000
 Preset: FuriHalSubGhzPresetOok650Async
