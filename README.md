@@ -33,7 +33,7 @@ This is the logic:
 * if state no change > short pulse
 * for each change, we take the previous state and reverse it
 
-
+![Image](https://github.com/user-attachments/assets/9f4cbf91-9bf2-4853-8b36-f099f986f6d9)
 
 Using the spoofing_oregon.py script.
 This script will regenerate a frame in Oregon THGR810 format.
