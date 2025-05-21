@@ -27,6 +27,12 @@ Binary visualization with URH:
 
 ![Image](https://github.com/user-attachments/assets/25edabd0-f072-40cc-98d2-2a13712cf16f)
 
+This is the logic:
+if state change > long pulse
+if state no change > short pulse
+
+For each change, we take the previous state and reverse it.
+
 Using the spoofing_oregon.py script.
 This script will regenerate a frame in Oregon THGR810 format.
 
