@@ -12,7 +12,7 @@ rtl_433 -d driver=hackrf -w capture_thgr810.ook
 ```
 ![Image](https://github.com/user-attachments/assets/b5496536-d790-41c0-afed-f0e047c8363c)
 
-## Decode Oregon Protocols V3 and spoof temperature on rf433
+## Decode Oregon Protocols V3
 
 Convert signals captured with rtl_433 or rtl-sdr to .sub format:
 
@@ -38,7 +38,9 @@ This is the logic:
 ## RF message data layout
 ![Image](https://github.com/user-attachments/assets/71684595-7d97-4051-9b97-1430982566b3)
 
-Using the spoofing_oregon.py script.
+## Spoofing THGR810 temperature on rf433
+
+Use the spoofing_oregon.py script.
 This script will regenerate a frame in Oregon THGR810 format.
 
 The output format is a sub.
