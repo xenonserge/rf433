@@ -25,7 +25,7 @@ python3 subghz_ook_to_sub.py capture-thgr810.ook
 
 Binary visualization with URH:
 
-![Image](https://github.com/user-attachments/assets/25edabd0-f072-40cc-98d2-2a13712cf16f)
+![Image](https://github.com/user-attachments/assets/b88e77fa-3c59-443a-beb3-19593357b8f9)
 
 This is the logic:
 
