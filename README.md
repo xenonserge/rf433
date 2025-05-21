@@ -13,10 +13,22 @@ rtl_433 -d driver=hackrf -w capture_thgr810.ook
 
 ## Decode Oregon Protocols V3 and spoof temperature on rf433
 
-Convert signals captured with rtl_433 or rtl-sdr to .sub format.
+Convert signals captured with rtl_433 or rtl-sdr to .sub format:
+
 [https://github.com/evilpete/flipper_toolbox](https://github.com/evilpete/flipper_toolbox)
 
 
 ```
 python3 subghz_ook_to_sub.py capture-thgr810.ook
 ```
+
+Visualisation du binaire avec URH:
+
+![Image](https://github.com/user-attachments/assets/25edabd0-f072-40cc-98d2-2a13712cf16f)
+
+
+Utilisation du script spoofing_oregon.py
+Ce script va regenerer une trame au format oregon THGR810
+
+Le format de sortie est un sub.
+Possibilité de rejouer cette trame avec un flipper zero
