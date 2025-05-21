@@ -23,14 +23,13 @@ Convert signals captured with rtl_433 or rtl-sdr to .sub format:
 python3 subghz_ook_to_sub.py capture-thgr810.ook
 ```
 
-Visualisation du binaire avec URH:
+Binary visualization with URH:
 
 ![Image](https://github.com/user-attachments/assets/25edabd0-f072-40cc-98d2-2a13712cf16f)
 
+Using the spoofing_oregon.py script.
+This script will regenerate a frame in Oregon THGR810 format.
 
-Utilisation du script spoofing_oregon.py
-Ce script va regenerer une trame au format oregon THGR810
-
-Le format de sortie est un sub.
-Possibilité de rejouer cette trame avec un flipper zero
+The output format is a sub.
+Possibility to replay this frame with a flipper zero.
 
