@@ -3,7 +3,8 @@
 ## The temperature and humidity probe Oregon THGR810
 ![Image](https://github.com/user-attachments/assets/4a85eabd-7aa1-44f7-b024-3813c0648c27)
 
-## Capture signal
+## Capture signal with a HackRF One
+![Image](https://github.com/user-attachments/assets/2f7489a0-a559-48f0-a4dd-85895ca61207)
 
 Use rtl_433 software to record the signal from THGR810
 ```
@@ -32,3 +33,4 @@ Ce script va regenerer une trame au format oregon THGR810
 
 Le format de sortie est un sub.
 Possibilité de rejouer cette trame avec un flipper zero
+
